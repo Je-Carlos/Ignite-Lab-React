@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { ApolloProvider } from "@apollo/client";
-import logo from "./logo.svg";
-import "./App.css";
 import "../src/styles/global.css";
 import { gql, useQuery } from "@apollo/client";
 import { client } from "./lib/apollo";

@@ -65,6 +65,7 @@ export function Video(props: VideoProps) {
           </Player>
         </div>
       </div>
+
       <div className="p-8 max-w-[1100] mx-auto">
         <div className="flex items-start gap-16">
           <div className="flex-1">
@@ -131,7 +132,7 @@ export function Video(props: VideoProps) {
           </a>
 
           <a
-            href=""
+            href="#"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
             <div className="bg-green-700 h-full p-6 flex items-center">
