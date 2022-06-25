@@ -4,13 +4,6 @@ import ptBR from "date-fns/locale/pt-BR";
 import { Link, useParams } from "react-router-dom";
 import classNames from 'classnames';
 
-// Criando os props
-interface LessonProps {
-  title: string;
-  slug: string;
-  availableAt: Date;
-  type: "live" | "class";
-}
 
 export function Lesson(props: LessonProps) {
   const { slug } = useParams<{ slug: string }>();
@@ -29,7 +22,7 @@ export function Lesson(props: LessonProps) {
 
       <div className={classNames( `rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500`,{
         'bg-green-500': isActiveLesson,
-        'bg-gray-500  opacity-30 border-none cursor-not-allowed': !isLessonAvailable
+        'bg-gray-500  opacity-30 border-none cursor-not-allowed': !isLessonAvailable,
         
       })}>
         <header className="flex items-center justify-between">
