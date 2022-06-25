@@ -3,6 +3,8 @@ import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
+import imgUrl from '../assets/code-mockup.png';
+import imgReact from '../assets/ReactJsIcon.svg';
 
 
 export function Home() {
@@ -25,8 +27,8 @@ export function Home() {
         <div className="max-w-[640px] ">
           <Logo />
           <img
-            src="/src/assets/ReactJsIcon.svg"
-            alt=""
+            src={imgReact}
+            alt="Logo React"
             className="absolute bg-center bg-no-repeat cover top-2"
           />
           <h1 className="mt-8 text-[2.5rem] leading-tight">
@@ -71,7 +73,7 @@ export function Home() {
         </div>
       </div>
 
-      <img src="/src/assets/code-mockup.png" alt="" className="mt-10"></img>
+      <img src={imgUrl} alt="" className="mt-10"></img>
     </div>
   );
 }
