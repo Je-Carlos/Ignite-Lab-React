@@ -29,6 +29,7 @@ export function Lesson(props: LessonProps) {
 
       <div className={classNames( `rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500`,{
         'bg-green-500': isActiveLesson,
+        'bg-gray-500  opacity-30 border-none cursor-not-allowed': !isLessonAvailable
         
       })}>
         <header className="flex items-center justify-between">
@@ -36,13 +37,14 @@ export function Lesson(props: LessonProps) {
             <span className={classNames('text-sm font-medium flex items-center gap-2  ',{
               'text-white': isActiveLesson,
               'text-blue-500': !isActiveLesson,
-
             })}>
               <CheckCircle size={20} />
               Conteúdo liberado
             </span>
           ) : (
-            <span className='text-sm text-orange-500 font-medium flex items-center gap-2'>
+            <span className={classNames('text-sm text-orange-500 font-medium flex items-center gap-2',{
+              ' text-gray-200': !isLessonAvailable
+            })}>
               <Lock size={20} />
               Em breve
             </span>
