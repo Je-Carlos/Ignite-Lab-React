@@ -29,7 +29,7 @@ interface SidebarProps {
 }
 
 export function Sidebar(props: SidebarProps) {
-  const { data } = useQuery<GetLessonsQueryResponse>(GET_LESSONS_QUERY); // buscando os dados da API
+  const { data, loading } = useQuery<GetLessonsQueryResponse>(GET_LESSONS_QUERY); // buscando os dados da API
 
   return (
     <aside
