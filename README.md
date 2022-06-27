@@ -37,6 +37,7 @@ $ npm run dev
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [GraphCMS](https://graphcms.com/)
+- [Vercel](https://vercel.com/)
 
 ---
 
